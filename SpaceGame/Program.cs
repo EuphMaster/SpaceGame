@@ -10,6 +10,8 @@ namespace SpaceGame
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello,Welcome to Space Station Braggadamia");
+
         }
     }
 }
