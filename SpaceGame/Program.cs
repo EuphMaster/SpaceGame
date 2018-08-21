@@ -10,8 +10,18 @@ namespace SpaceGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello,Welcome to Space Station Braggadamia");
+            
+            Console.WriteLine("Hello,Welcome to Space Station Braggadamia", "\n");
+            Console.WriteLine("Please name your Captain");
+            string characterName = Console.ReadLine();
+            
+            Console.WriteLine("Welcome Captain  " + characterName);
+            Console.WriteLine("Please Choose a ship \n press A or B");
+            Console.WriteLine("A - Small ugly ship with minimal power " +
+                              "\nB - Smaller uglier ship with minimal power");
+           
 
         }
     }
+    
 }
