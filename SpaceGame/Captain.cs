@@ -8,6 +8,6 @@ namespace SpaceGame
 {
     class Captain
     {
-        string CharacterName { get; set; }
+        
     }
 }

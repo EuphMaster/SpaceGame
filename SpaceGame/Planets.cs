@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 namespace SpaceGame
 {
     class Planets
-    {
-        
 
-        
+    {
+        string Earth;
+        string AlphaCentairi;
+        string MyGreatPlanet;
+
     }
+
 }

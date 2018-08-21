@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace SpaceGame
 {
     class Ship
-        {
-            
-         
+    
+    {
+        
 
         }
     
