@@ -12,7 +12,7 @@ namespace SpaceGame
 
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("David was here");
             Console.WriteLine("Hello,Welcome to Space Station Braggadamia", "\n");
             Console.WriteLine("Please name your Captain");
             string CharacterName = Console.ReadLine();
