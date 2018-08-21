@@ -8,22 +8,30 @@ namespace SpaceGame
 {
     class Program
     {
+       
+
         static void Main(string[] args)
         {
-
+            
             Console.WriteLine("Hello,Welcome to Space Station Braggadamia", "\n");
             Console.WriteLine("Please name your Captain");
-            string characterName = Console.ReadLine();
+            string CharacterName = Console.ReadLine();
+          
+           
 
-            Console.WriteLine("Welcome Captain  " + characterName);
+
+            Console.WriteLine("Welcome Captain  " + CharacterName);
             Console.WriteLine("Please Choose a ship \n press A or B");
             Console.WriteLine("A - Small ugly ship with minimal power " +
                               "\nB - Tiny cute ship with minimal power");
+            string SmallUgly;
+            string TinyUgly;
+            SmallUgly = A; 
 
-
-
-            Console.ReadLine();
+             Console.ReadLine();
+            
         }
+       
     }
 
 }

@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace SpaceGame
 {
     class Ship
-    {
-        string SmallUgly = Console.ReadLine();
-        string TinyCute = Console.ReadLine();
+        {
+            
+         
 
-    }
+        }
+    
 }
