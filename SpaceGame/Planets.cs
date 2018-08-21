@@ -9,7 +9,5 @@ namespace SpaceGame
     class Planets
     {
         
-
-        
     }
 }
