@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SpaceGame
 {
-    class Planets
+    public class Planets
 
     {
-        string Earth;
-        string AlphaCentairi;
-        string MyGreatPlanet;
+        public string Earth;
+        public string AlphaCentairi;
+        public string MyGreatPlanet;
 
 
     }
