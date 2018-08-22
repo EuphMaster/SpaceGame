@@ -22,33 +22,40 @@ namespace SpaceGame
 
             Console.WriteLine("Welcome Captain  " + characterName);
             Console.WriteLine("You have been supplied with a Small Ugly Ship");
-            Console.WriteLine("Where would you like to go? \n,Alpha Centauri or My Great Planet? \n" +
+            bool a = true;
+            do {
+                Console.WriteLine("Where would you like to go? \n,Alpha Centauri or My Great Planet? \n" +
                 "press A for Alpha Centauri   press B for My Great Planet");
-
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToLower();
-
-            do
-            {
+            
+                string userInput = Console.ReadLine();
+                userInput = userInput.ToLower();
+                
+            
+            
                 if (userInput == "a")
 
                 {
                     Console.WriteLine("Good choice " + characterName + " your trip to Alpha Centauri will take");
+                    a = false;
                 }
                 else if (userInput == "b")
                 {
                     Console.WriteLine("Good choice " + characterName + " your trip to My Great Planet will take ");
+                    a = false;
                 }
                 else
                 {
                     Console.WriteLine("Input valid choice");
+                     
                 }
-            } while (bool = );
+            }
 
-
+            while (a == true);
+                
 
             Console.ReadLine();
-           
+            
+
         }
        
 
