@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace SpaceGame
 {
-    class Ship
-        {
-            
-         
+    public class Ship
+    
+    {
+        string smallship;
+        string newShip;
 
-        }
+    }
     
 }

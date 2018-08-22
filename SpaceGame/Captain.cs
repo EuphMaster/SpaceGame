@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SpaceGame
 {
-    class Captain
+    public class Captain
     {
-        string CharacterName { get; set; }
+        string player1;
     }
 }

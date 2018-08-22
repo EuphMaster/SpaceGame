@@ -9,9 +9,11 @@ namespace SpaceGame
     public class Planets
 
     {
-        
+        public string Earth;
+        public string AlphaCentairi;
+        public string MyGreatPlanet;
 
-        
+
     }
 
 }

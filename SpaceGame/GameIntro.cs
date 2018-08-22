@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SpaceGame
 {
-    public class TravelSpeed
+    public class GameIntro
     {
+        
     }
 }

@@ -6,57 +6,54 @@ using System.Threading.Tasks;
 
 namespace SpaceGame
 {
-    public static class Game
+    class Program
     {
 
 
-        static string CharacterName = " ";
+        static void Main(string[] args)
+        {
 
-        public static void StartGame()
-        {
-            Console.WriteLine("SpaceGame");
-            Console.WriteLine("Welcome to our great adventure. You are about to travel the Galaxy!");
-            string CharacterName;
-            Choice();
-        }
-        static void Choice()
-        {
-            string input = " ";
-            Console.WriteLine(CharacterName + " Which Planet would you Choose?\n My great planet or Alpha centauri? ");
-            input = Console.ReadLine();
-            if (input == "My great planet")
+            Console.WriteLine("Hello,Welcome to Earth", "\n");
+            Console.WriteLine("Please name your Captain");
+            string characterName = Console.ReadLine();
+
+
+
+
+            Console.WriteLine("Welcome Captain  " + characterName);
+            Console.WriteLine("You have been supplied with a Small Ugly Ship");
+            Console.WriteLine("Where would you like to go? \n,Alpha Centauri or My Great Planet? \n" +
+                "press A for Alpha Centauri   press B for My Great Planet");
+
+            string userInput = Console.ReadLine();
+            userInput = userInput.ToLower();
+
+            do
             {
-                Console.WriteLine("You have choosen My great Planet!");
-            }
-            else
-            {
-                Console.WriteLine("You have choosen Apha centauri!");
-            }
+                if (userInput == "a")
 
+                {
+                    Console.WriteLine("Good choice " + characterName + " your trip to Alpha Centauri will take");
+                }
+                else if (userInput == "b")
+                {
+                    Console.WriteLine("Good choice " + characterName + " your trip to My Great Planet will take ");
+                }
+                else
+                {
+                    Console.WriteLine("Input valid choice");
+                }
+            } while (bool = );
+
+
+
+            Console.ReadLine();
+           
         }
-        static void CharacterNAme()
-        {
-            Console.WriteLine("What would like your character name to be? ");
-            CharacterName = Console.ReadLine();
+       
 
-            Console.WriteLine("Great your code name is now Named " + CharacterName);
-        }
-    }
-    class item
-    {
 
     }
-    class program
 
-    { 
-           static void Main()
-           {
-            Game.StartGame();
-            Console.WriteLine();
-
-           }
-    }
-}              
-
-
+}
 
