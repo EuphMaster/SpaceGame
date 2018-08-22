@@ -8,6 +8,6 @@ namespace SpaceGame
 {
     public class Captain
     {
-        
+        string player1;
     }
 }
