@@ -6,38 +6,57 @@ using System.Threading.Tasks;
 
 namespace SpaceGame
 {
-    class Program
+    public static class Game
     {
-       
 
-        static void Main(string[] args)
+
+        static string CharacterName = " ";
+
+        public static void StartGame()
         {
-           
-            Console.WriteLine("Hello,Welcome to Space Station Braggadamia", "\n");
-            Console.WriteLine("Please name your Captain");
-            string CharacterName = Console.ReadLine();
-          
-           
-
-
-            Console.WriteLine("Welcome Captain  " + CharacterName);
-            Console.WriteLine("Please Choose a ship \n press A or B");
-
-
-            Console.WriteLine("A - Small ugly ship with minimal power " +
-                              "\nB - Tiny cute ship with minimal power");
-
-            
-
-             Console.ReadLine();
-            jhsahsjh
+            Console.WriteLine("SpaceGame");
+            Console.WriteLine("Welcome to our great adventure. You are about to travel the Galaxy!");
+            string CharacterName;
+            Choice();
         }
-          public static void student
+        static void Choice()
         {
+            string input = " ";
+            Console.WriteLine(CharacterName + " Which Planet would you Choose?\n My great planet or Alpha centauri? ");
+            input = Console.ReadLine();
+            if (input == "My great planet")
+            {
+                Console.WriteLine("You have choosen My great Planet!");
+            }
+            else
+            {
+                Console.WriteLine("You have choosen Apha centauri!");
+            }
 
         }
+        static void CharacterNAme()
+        {
+            Console.WriteLine("What would like your character name to be? ");
+            CharacterName = Console.ReadLine();
+
+            Console.WriteLine("Great your code name is now Named " + CharacterName);
+        }
+    }
+    class item
+    {
 
     }
+    class program
 
-}
+    { 
+           static void Main()
+           {
+            Game.StartGame();
+            Console.WriteLine();
+
+           }
+    }
+}              
+
+
 
