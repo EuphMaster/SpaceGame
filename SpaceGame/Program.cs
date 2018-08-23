@@ -51,16 +51,22 @@ namespace SpaceGame
             }
 
             while (a == true);
-                
+                    Console.ReadLine();
 
-            Console.ReadLine();
+            
             
 
         }
-       
+        
+
+
+
+
+
 
 
     }
+    
 
 }
 
