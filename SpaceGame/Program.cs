@@ -7,98 +7,162 @@ using System.Threading.Tasks;
 namespace SpaceGame
 {
     class Program
-
     {
-
 
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Hello,Welcome to Earth", "\n");
-            Console.WriteLine("Please name your Captain");
-            string characterName = Console.ReadLine();
-
-
-
-
-            Console.WriteLine("Welcome Captain  " + characterName);
-            Console.WriteLine("You have been supplied with a Small Ugly Ship");
-            bool a = true;
-
-            do {
-                Console.WriteLine("Where would you like to go? \n,Alpha Centauri or My Great Planet? \n" +
-                "press A for Alpha Centauri   press B for My Great Planet");
-            
-                string userInput = Console.ReadLine();
-                userInput = userInput.ToLower();
-                
-            
-            
-                if (userInput == "a")
-                    
-                {
-                    Console.WriteLine("Good choice " + characterName + " your trip to Alpha Centauri will take");
-                    a = false;
-
-                    TravelDetails();
-                }
-                else if (userInput == "b")
-                {
-                    Console.WriteLine("Good choice " + characterName + " your trip to My Great Planet will take ");
-                    a = false;
-                }
-                else
-                {
-                    Console.WriteLine("Input valid choice");
-                     
-                }
-            }
-
-            while (a == true);
-                
-
-            Console.ReadLine();
-            Console.Clear();
-        
-            
+            gameTitle();
+            gameintroduction();
+            characterName();
+            aventureType();
 
         }
-            
 
-        public static void TravelDetails()
-
-            
+        public static void gameTitle()       // first screen to show  when the game start.
         {
-            string choice;
+            Console.WriteLine("Hello, Welcome to this amazing game.");
+            Console.WriteLine("Press 'Enter' to begin");
+            Console.ReadLine();
+            Console.Clear();
 
-            Console.WriteLine(" Congrats! You have arrived on the First stage of the game \n you will have to have some money to buy flight tickey" +
-                " food and some other goodies");
-            Console.WriteLine(" Look around there is nothing to do except go to the trading post.");
-            Console.WriteLine(" You approach the store manager and he says");
-            Console.WriteLine(" Hello! I have what you need, but first you have to give a correct answer to this question");
+        }
 
-            Console.WriteLine(" Are you alive Yes or No?");
-            Console.Write("choice ");
+        public static void gameintroduction()  // explain the context of the game 
+        {
+            Console.WriteLine("You are about to start an unforgettable adventure; You will travel" +
+                " around the galaxy, have the opportunity" +
+                " to trade 'buy and sell' commodities and hopefully make a profit if you are smart. " +
+                "You will travel on two planets; " +
+                "On each planet, you will have" +
+                " a different set of products at different prices." +
+                " Be smart! But, First, you will need a code name.");
 
+            Console.WriteLine("Press 'Enter' to continue");
+            Console.ReadLine();
+            Console.Clear();
+        }
+
+        public static void characterName()    //     player choose a name 
+        {
+            string choice = " ";
+
+
+            Console.WriteLine("At this stage, you have to choose your code name. Three choices are available for you: ");
+            Console.WriteLine("I'm curious to see your choice!");
+            Console.WriteLine("1.FlashLight");
+            Console.WriteLine("2.Nasdaq");
+            Console.WriteLine("3.Buzzor");
+            Console.Write("choice: ");
             choice = Console.ReadLine().ToLower();
+            Console.Clear();
 
             switch (choice)
             {
-                case "Yes":
-                case "No":
+                case "1":
+                case "FlashLight":
+                case "Flash":
                     {
-                        Console.WriteLine("You deserved ten thousands dollars!");
-                        Console.WriteLine("You will not get any money,\n you have one more chance!");
+                        Console.WriteLine("FlashLight! Great choice");
+                        Console.WriteLine("Hopefully you will embody the meaning of the name");
+                        Console.WriteLine("Press 'Enter' to continue.");
+                        Console.ReadLine();
+
+                        break;
                     }
-                    
-                    break;
+
+                case "2":
+                case "Nasdaq":
+                    {
+                        Console.WriteLine("Nasdaq! perfect choice");
+                        Console.WriteLine("You should be proud of yourself.");
+                        Console.WriteLine("Press 'Enter to continue.");
+                        Console.ReadLine();
+                        break;
+                    }
+
+                case "3":
+                case "Buzzor":
+                    {
+                        Console.WriteLine("Buzzor! That's  sweet");
+                        Console.WriteLine("Robust choice.");
+                        Console.WriteLine("Press 'Enter to continue.");
+                        Console.ReadLine();
+                        break;
+                    }
+
+                default:
+                    {
+                        Console.WriteLine("I dont understand that command...");
+                        Console.WriteLine("Press 'Enter to try again.");
+                        Console.ReadLine();
+                        characterName();
+                        break;
+                    }
+
             }
+
+
+
+        }
+        public static void introAventureType()    // player pick his adventure type out of the two choices provide
+        {
+
+
+
+            Console.WriteLine(" Now the fun stuff start.");
+            Console.WriteLine("Press 'Enter' to continue");
+            Console.ReadLine();
+            Console.Clear();
+
+
+        }
+        public static void aventureType()
+        {
+            string userInput = " ";
+
+            Console.WriteLine("Rigt now, You have a two choices. Choose wisely and enjoy!");
+            Console.WriteLine("A.Buy");
+            Console.WriteLine("B.Travel");
+            Console.Write("userInput: ");
+            userInput = Console.ReadLine().ToLower();
+            Console.Clear();
+
+            switch (userInput)
+            {
+                case "a":
+                    {
+                        Console.WriteLine("You have chosen to buy");
+                        Console.WriteLine("Press 'Enter' to continue");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "b":
+                    {
+                        Console.WriteLine("You have chosen to travel");
+                        Console.WriteLine("Press 'Enter' to continue");
+                        Console.ReadLine();
+                        break;
+
+                    }
+                default:
+                    {
+                        Console.WriteLine("That's an invalid choice...,Press 'Enter' to try again and this time pick 'A' or 'B'");
+                        Console.ReadLine();
+                        aventureType();
+                        break;
+                    }
+            }
+
+
 
         }
 
-    } 
-   
-    
+
+
+    }
+
 
 }
+
+
 
