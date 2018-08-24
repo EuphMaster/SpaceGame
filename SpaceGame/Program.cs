@@ -15,10 +15,10 @@ namespace SpaceGame
             gameintroduction();
             characterName();
             aventureType();
-
+           // timeTraveled();
         }
 
-        public static void gameTitle()       // first screen to show  when the game start.
+        public static void gameTitle()          // first screen to show  when the game start.
         {
             Console.WriteLine("Hello, Welcome to this amazing game.");
             Console.WriteLine("Press 'Enter' to begin");
@@ -27,7 +27,7 @@ namespace SpaceGame
 
         }
 
-        public static void gameintroduction()  // explain the context of the game 
+        public static void gameintroduction()    // explain the context of the game 
         {
             Console.WriteLine("You are about to start an unforgettable adventure; You will travel" +
                 " around the galaxy, have the opportunity" +
@@ -42,7 +42,7 @@ namespace SpaceGame
             Console.Clear();
         }
 
-        public static void characterName()    //     player choose a name 
+        public static void characterName()       //     player choose a name 
         {
             string choice = " ";
 
@@ -116,7 +116,7 @@ namespace SpaceGame
 
 
         }
-        public static void aventureType()
+        public static void aventureType()      // player choose with type of adventure to start with
         {
             string userInput = " ";
 
@@ -156,7 +156,17 @@ namespace SpaceGame
 
 
         }
+        public void timeTraveled()
+        {
+            Double timeTraveled = 0;
 
+            
+            {
+               // timeTraveled = D / (Math.Pow(W, 10 / 3) + Math.Pow(W - 10 - 11 / 3));
+               // return timeTraveled;
+            }
+
+        }
 
 
     }
