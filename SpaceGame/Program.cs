@@ -161,12 +161,14 @@ namespace SpaceGame
         {
             string item;
             Console.WriteLine("Welcome to the Earth Store");
-            Console.WriteLine("What would you like to buy?  Everything is 1 credit");
-            Console.WriteLine("1- Pepsi");
-            Console.WriteLine("2- Coke");
-            Console.WriteLine("3 - Tab");
-            Console.WriteLine("4 - Faygo");
+            Console.WriteLine("What would you like to buy? ");
+            Console.WriteLine("Pick a number 1, 2, 3 or 4");
+            Console.WriteLine("1- Pepsi is 3 credits");
+            Console.WriteLine("2- Coke is 4 credits ");
+            Console.WriteLine("3 - Tab  is 17 credits");
+            Console.WriteLine("4 - Faygo is 1 credit");
             item = Console.ReadLine().ToLower();
+            Console.Clear();
 
             switch (item)
             {
@@ -186,6 +188,7 @@ namespace SpaceGame
                     {
                         Console.WriteLine("Tab is yummy");
                         Console.ReadLine();
+                       
                         break;
                     }
                 case "4":
@@ -206,10 +209,58 @@ namespace SpaceGame
             }
 
         }
+        public static void MyGreatStore()
+        {
+            string item;
+            Console.WriteLine("Welcome to My Great Planet Store");
+            Console.WriteLine("What would you like to buy? ");
+            Console.WriteLine("Pick a number 1, 2, 3 or 4");
+            Console.WriteLine("1- Snickers is 12 credits");
+            Console.WriteLine("2- KitKat is 32 credits ");
+            Console.WriteLine("3 - Twix  is 23 credits");
+            Console.WriteLine("4 - BabyRuth is 5 credits");
+            item = Console.ReadLine().ToLower();
+            Console.Clear();
+
+            switch (item)
+            {
+                case "1":
+                    {
+                        Console.WriteLine("Good Choice");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "2":
+                    {
+                        Console.WriteLine("Yum KitKat");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "3":
+                    {
+                        Console.WriteLine("Left and Right Twix, Yay");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "4":
+                    {
+                        Console.WriteLine("Terrible candy bar, here you go");
+                        Console.ReadLine();
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("I dont understand, try again");
+
+
+                        break;
+                    }
+
+            }
+
+
+        }
     }
-
-
-
 }
 
 
