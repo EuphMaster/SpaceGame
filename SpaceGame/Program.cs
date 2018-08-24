@@ -15,10 +15,10 @@ namespace SpaceGame
             gameintroduction();
             characterName();
             aventureType();
-           // timeTraveled();
+            EarthStore();
         }
 
-        public static void gameTitle()          // first screen to show  when the game start.
+        public static void gameTitle()       // first screen to show  when the game start.
         {
             Console.WriteLine("Hello, Welcome to this amazing game.");
             Console.WriteLine("Press 'Enter' to begin");
@@ -27,7 +27,7 @@ namespace SpaceGame
 
         }
 
-        public static void gameintroduction()    // explain the context of the game 
+        public static void gameintroduction()  // explain the context of the game 
         {
             Console.WriteLine("You are about to start an unforgettable adventure; You will travel" +
                 " around the galaxy, have the opportunity" +
@@ -42,7 +42,7 @@ namespace SpaceGame
             Console.Clear();
         }
 
-        public static void characterName()       //     player choose a name 
+        public static void characterName()    //     player choose a name 
         {
             string choice = " ";
 
@@ -116,7 +116,7 @@ namespace SpaceGame
 
 
         }
-        public static void aventureType()      // player choose with type of adventure to start with
+        public static void aventureType()
         {
             string userInput = " ";
 
@@ -134,6 +134,7 @@ namespace SpaceGame
                         Console.WriteLine("You have chosen to buy");
                         Console.WriteLine("Press 'Enter' to continue");
                         Console.ReadLine();
+                        EarthStore();
                         break;
                     }
                 case "b":
@@ -156,23 +157,63 @@ namespace SpaceGame
 
 
         }
-        public void timeTraveled()
+        public static void EarthStore()
         {
-            Double timeTraveled = 0;
+            string item;
+            Console.WriteLine("Welcome to the Earth Store");
+            Console.WriteLine("What would you like to buy?  Everything is 1 credit");
+            Console.WriteLine("1- Pepsi");
+            Console.WriteLine("2- Coke");
+            Console.WriteLine("3 - Tab");
+            Console.WriteLine("4 - Faygo");
+            item = Console.ReadLine().ToLower();
 
-            
+            switch (item)
             {
-               // timeTraveled = D / (Math.Pow(W, 10 / 3) + Math.Pow(W - 10 - 11 / 3));
-               // return timeTraveled;
+                case "1":
+                    {
+                        Console.WriteLine("Good Choice");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "2":
+                    {
+                        Console.WriteLine("Coke it is");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "3":
+                    {
+                        Console.WriteLine("Tab is yummy");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "4":
+                    {
+                        Console.WriteLine("Wow, you are cheap, enjoy your Faygo");
+                        Console.ReadLine();
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("I dont understand, try again");
+
+
+                        break;
+                    }
+
+
             }
 
         }
-
-
     }
 
 
+
 }
+
+
+
 
 
 
