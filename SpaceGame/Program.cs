@@ -15,7 +15,7 @@ namespace SpaceGame
             gameintroduction();
             characterName();
             aventureType();
-
+            EarthStore();
         }
 
         public static void gameTitle()       // first screen to show  when the game start.
@@ -134,6 +134,7 @@ namespace SpaceGame
                         Console.WriteLine("You have chosen to buy");
                         Console.WriteLine("Press 'Enter' to continue");
                         Console.ReadLine();
+                        EarthStore();
                         break;
                     }
                 case "b":
@@ -156,13 +157,63 @@ namespace SpaceGame
 
 
         }
+        public static void EarthStore()
+        {
+            string item;
+            Console.WriteLine("Welcome to the Earth Store");
+            Console.WriteLine("What would you like to buy?  Everything is 1 credit");
+            Console.WriteLine("1- Pepsi");
+            Console.WriteLine("2- Coke");
+            Console.WriteLine("3 - Tab");
+            Console.WriteLine("4 - Faygo");
+            item = Console.ReadLine().ToLower();
+
+            switch (item)
+            {
+                case "1":
+                    {
+                        Console.WriteLine("Good Choice");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "2":
+                    {
+                        Console.WriteLine("Coke it is");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "3":
+                    {
+                        Console.WriteLine("Tab is yummy");
+                        Console.ReadLine();
+                        break;
+                    }
+                case "4":
+                    {
+                        Console.WriteLine("Wow, you are cheap, enjoy your Faygo");
+                        Console.ReadLine();
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("I dont understand, try again");
 
 
+                        break;
+                    }
 
+
+            }
+
+        }
     }
 
 
+
 }
+
+
+
 
 
 
