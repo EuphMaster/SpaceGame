@@ -15,7 +15,8 @@ namespace SpaceGame
             gameintroduction();
             characterName();
             aventureType();
-            EarthStore();
+            earthStore();
+            
         }
 
         public static void gameTitle()       // first screen to show  when the game start.
@@ -116,7 +117,7 @@ namespace SpaceGame
 
 
         }
-        public static void aventureType()       
+        public static void aventureType()
         {
             string userInput = " ";
 
@@ -134,7 +135,7 @@ namespace SpaceGame
                         Console.WriteLine("You have chosen to buy");
                         Console.WriteLine("Press 'Enter' to continue");
                         Console.ReadLine();
-                        EarthStore();
+                        earthStore();
                         break;
                     }
                 case "b":
@@ -157,16 +158,16 @@ namespace SpaceGame
 
 
         }
-        public static void EarthStore()
+        public static void earthStore()
         {
             string item;
             Console.WriteLine("Welcome to the Earth Store");
             Console.WriteLine("What would you like to buy? ");
             Console.WriteLine("Pick a number 1, 2, 3 or 4");
-            Console.WriteLine("1- Pepsi is 3 credits");
-            Console.WriteLine("2- Coke is 4 credits ");
-            Console.WriteLine("3 - Tab  is 17 credits");
-            Console.WriteLine("4 - Faygo is 1 credit");
+            Console.WriteLine("1- Pepsi = 3 credits");
+            Console.WriteLine("2- Coke  = 4 credits ");
+            Console.WriteLine("3 - Tab  = 17 credits");
+            Console.WriteLine("4 - Faygo = 1 credit");
             item = Console.ReadLine().ToLower();
             Console.Clear();
 
@@ -188,7 +189,7 @@ namespace SpaceGame
                     {
                         Console.WriteLine("Tab is yummy");
                         Console.ReadLine();
-                       
+
                         break;
                     }
                 case "4":
@@ -209,16 +210,16 @@ namespace SpaceGame
             }
 
         }
-        public static void MyGreatStore()
+        public static void MyGreatStore()  // this is the implementation of the store in the earth location.
         {
             string item;
             Console.WriteLine("Welcome to My Great Planet Store");
             Console.WriteLine("What would you like to buy? ");
             Console.WriteLine("Pick a number 1, 2, 3 or 4");
-            Console.WriteLine("1- Snickers is 12 credits");
-            Console.WriteLine("2- KitKat is 32 credits ");
-            Console.WriteLine("3 - Twix  is 23 credits");
-            Console.WriteLine("4 - BabyRuth is 5 credits");
+            Console.WriteLine("1- Snickers = 12 credits");
+            Console.WriteLine("2- KitKat   = 32 credits ");
+            Console.WriteLine("3- Twix     = 23 credits");
+            Console.WriteLine("4- BabyRuth = 5 credits");
             item = Console.ReadLine().ToLower();
             Console.Clear();
 
@@ -251,8 +252,7 @@ namespace SpaceGame
                 default:
                     {
                         Console.WriteLine("I dont understand, try again");
-
-
+                        Console.ReadLine();
                         break;
                     }
 
@@ -260,9 +260,20 @@ namespace SpaceGame
 
 
         }
+
+        public static double travelTime(double W)      // this method will calculate the travel speed and years
+        {
+            double travelTime = 0;
+            double distance = 0;
+            
+            travelTime = distance / (Math.Pow(W, 10 / 3) +
+            Math.Pow(10 - W, -11 / 3));
+
+            return travelTime;
+
+        }
     }
 }
-
 
 
 
