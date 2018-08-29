@@ -272,6 +272,7 @@ namespace SpaceGame
             return travelTime;
 
         }
+
     }
 }
 
