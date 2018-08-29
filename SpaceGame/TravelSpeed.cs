@@ -8,7 +8,7 @@ namespace SpaceGame
 {
     public class TravelSpeed
     {
-        private static void Travel()
+        private void Travel()
         {
             //Earth to Alpha Centauri and reverse
             double x1 = 0;
@@ -22,7 +22,7 @@ namespace SpaceGame
             Console.ReadLine();
 
         }
-        private static void EarthToMGP()
+        private void EarthToMGP()
         {
             //Earth to MGP and reverse
             double x1 = 0;
@@ -36,7 +36,7 @@ namespace SpaceGame
             Console.ReadLine();
 
         }
-        private static void MGPtoALpha()
+        private void MGPtoALpha()
         {
             //MGP to Alpha Centauri and reverse
             double x1 = -4.6;
@@ -56,7 +56,7 @@ namespace SpaceGame
             
 
         }
-        private static void WarpSpeed()
+        public void WarpSpeed()
         {
             int w;
             double speed;
@@ -64,6 +64,7 @@ namespace SpaceGame
             w = Convert.ToInt32(Console.ReadLine());
 
             speed = Math.Pow(w, 10 / 3) + Math.Pow((10 - w), -11 / 3);
+           
         }
     }
 }

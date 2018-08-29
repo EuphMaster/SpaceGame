@@ -16,7 +16,7 @@ namespace SpaceGame
             characterName();
             aventureType();
             earthStore();
-            
+           
         }
 
         public static void gameTitle()       // first screen to show  when the game start.
@@ -24,8 +24,9 @@ namespace SpaceGame
             Console.WriteLine("Hello, Welcome to this amazing game.");
             Console.WriteLine("Press 'Enter' to begin");
             Console.ReadLine();
+           
             Console.Clear();
-
+           
         }
 
         public static void gameintroduction()  // explain the context of the game 
@@ -77,7 +78,9 @@ namespace SpaceGame
                         Console.WriteLine("Nasdaq! perfect choice");
                         Console.WriteLine("You should be proud of yourself.");
                         Console.WriteLine("Press 'Enter to continue.");
+                       
                         Console.ReadLine();
+
                         break;
                     }
 
@@ -87,6 +90,7 @@ namespace SpaceGame
                         Console.WriteLine("Buzzor! That's  sweet");
                         Console.WriteLine("Robust choice.");
                         Console.WriteLine("Press 'Enter to continue.");
+                        TravelSpeed.WarpSpeed();
                         Console.ReadLine();
                         break;
                     }
