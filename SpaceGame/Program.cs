@@ -104,6 +104,7 @@ namespace SpaceGame
 
 
 
+
         }
         public static void introAventureType()    // player pick his adventure type out of the two choices provide
         {
@@ -166,8 +167,8 @@ namespace SpaceGame
             Console.WriteLine("Pick a number 1, 2, 3 or 4");
             Console.WriteLine("1- Pepsi = 3 credits");
             Console.WriteLine("2- Coke  = 4 credits ");
-            Console.WriteLine("3 - Tab  = 17 credits");
-            Console.WriteLine("4 - Faygo = 1 credit");
+            Console.WriteLine("3- Tab   = 17 credits");
+            Console.WriteLine("4- Faygo = 1 credit");
             item = Console.ReadLine().ToLower();
             Console.Clear();
 
