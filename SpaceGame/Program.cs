@@ -90,7 +90,7 @@ namespace SpaceGame
                         Console.WriteLine("Buzzor! That's  sweet");
                         Console.WriteLine("Robust choice.");
                         Console.WriteLine("Press 'Enter to continue.");
-                        TravelSpeed.WarpSpeed();
+                       
                         Console.ReadLine();
                         break;
                     }

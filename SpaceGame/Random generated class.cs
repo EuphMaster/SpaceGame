@@ -8,19 +8,22 @@ using System.Threading.Tasks;
 namespace SpaceGame
 {
     class Random_generated_class
-    {
+    { 
+
+        
         Random rnd = new Random();
 
         string str = "";
 
         string[] randomPlanets = { "earth", "alphaCentauruim", "mygreatPlanet" };
-        
+
         public int Randomnumber { get => randomnumber; set => randomnumber = value; }
+        public int randomnumber { get; private set; }
 
-        string
-
-
+        
 
     }
 
+    
 }
+
